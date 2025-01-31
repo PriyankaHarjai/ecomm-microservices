@@ -1,5 +1,6 @@
 package com.ecomm.entityBuilders;
 
+import com.ecomm.model.Roles;
 import com.ecomm.model.UserEntity;
 import com.ecomm.model.UserRequestDTO;
 import org.springframework.stereotype.Component;
@@ -9,6 +10,7 @@ public class UserDetailsBuilder {
     public UserEntity createUserDTO(UserRequestDTO user) {
         UserEntity userEntity = new UserEntity();
         if (user != null) {
+            userEntity.setRole(Roles.USER);
             userEntity.setFirstName(user.getFirstName());
             userEntity.setLastName(user.getLastName());
             userEntity.setEmail(user.getEmail());

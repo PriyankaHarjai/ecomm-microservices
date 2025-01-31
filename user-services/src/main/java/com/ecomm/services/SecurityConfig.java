@@ -22,7 +22,7 @@ public class SecurityConfig {
         return http
                 .csrf(csrf -> csrf.disable()) // Disable CSRF (Enable in production)
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/users/register", "/api/users/login").permitAll() // Public Endpoints
+                        .requestMatchers("/api/users/*").permitAll() // Public Endpoints
                         .anyRequest().authenticated() // Secure all other endpoints
                 )
                 .build();

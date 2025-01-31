@@ -21,6 +21,9 @@ public class UserEntity {
     // @Column(name="password")
     private String password;
 
+    @Enumerated(EnumType.STRING)
+    private Roles role;
+
     @CreatedDate
     @Temporal(TemporalType.TIMESTAMP)
     private Date createdAt = new Date();
@@ -74,5 +77,13 @@ public class UserEntity {
 
     public void setCreatedAt(Date createdAt) {
         this.createdAt = createdAt;
+    }
+
+    public Roles getRole() {
+        return role;
+    }
+
+    public void setRole(Roles role) {
+        this.role = role;
     }
 }
