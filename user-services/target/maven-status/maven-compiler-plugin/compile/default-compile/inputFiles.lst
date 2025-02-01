@@ -1,0 +1,16 @@
+C:\Users\priya\IdeaProjects\ecomm-microservices\user-services\src\main\java\com\ecomm\controllers\UserServiceController.java
+C:\Users\priya\IdeaProjects\ecomm-microservices\user-services\src\main\java\com\ecomm\entityBuilders\UserDetailsBuilder.java
+C:\Users\priya\IdeaProjects\ecomm-microservices\user-services\src\main\java\com\ecomm\exception\EmailAlreadyExistsException.java
+C:\Users\priya\IdeaProjects\ecomm-microservices\user-services\src\main\java\com\ecomm\exception\UnAuthorizedException.java
+C:\Users\priya\IdeaProjects\ecomm-microservices\user-services\src\main\java\com\ecomm\exception\UserNotFoundException.java
+C:\Users\priya\IdeaProjects\ecomm-microservices\user-services\src\main\java\com\ecomm\model\ErrorResponse.java
+C:\Users\priya\IdeaProjects\ecomm-microservices\user-services\src\main\java\com\ecomm\model\LoginRequest.java
+C:\Users\priya\IdeaProjects\ecomm-microservices\user-services\src\main\java\com\ecomm\model\Roles.java
+C:\Users\priya\IdeaProjects\ecomm-microservices\user-services\src\main\java\com\ecomm\model\User.java
+C:\Users\priya\IdeaProjects\ecomm-microservices\user-services\src\main\java\com\ecomm\model\UserEntity.java
+C:\Users\priya\IdeaProjects\ecomm-microservices\user-services\src\main\java\com\ecomm\model\UserRequestDTO.java
+C:\Users\priya\IdeaProjects\ecomm-microservices\user-services\src\main\java\com\ecomm\repository\UserDetailsRepository.java
+C:\Users\priya\IdeaProjects\ecomm-microservices\user-services\src\main\java\com\ecomm\services\SecurityConfig.java
+C:\Users\priya\IdeaProjects\ecomm-microservices\user-services\src\main\java\com\ecomm\services\ServiceControllerAdvice.java
+C:\Users\priya\IdeaProjects\ecomm-microservices\user-services\src\main\java\com\ecomm\services\UserService.java
+C:\Users\priya\IdeaProjects\ecomm-microservices\user-services\src\main\java\com\ecomm\UserServiceApplication.java

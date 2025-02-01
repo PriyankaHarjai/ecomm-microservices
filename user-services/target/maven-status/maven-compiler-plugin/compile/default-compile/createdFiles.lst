@@ -1,0 +1,16 @@
+com\ecomm\model\UserRequestDTO.class
+com\ecomm\repository\UserDetailsRepository.class
+com\ecomm\exception\UserNotFoundException.class
+com\ecomm\services\SecurityConfig.class
+com\ecomm\entityBuilders\UserDetailsBuilder.class
+com\ecomm\model\LoginRequest.class
+com\ecomm\model\User.class
+com\ecomm\model\ErrorResponse.class
+com\ecomm\services\ServiceControllerAdvice.class
+com\ecomm\controllers\UserServiceController.class
+com\ecomm\model\Roles.class
+com\ecomm\UserServiceApplication.class
+com\ecomm\exception\EmailAlreadyExistsException.class
+com\ecomm\exception\UnAuthorizedException.class
+com\ecomm\services\UserService.class
+com\ecomm\model\UserEntity.class
