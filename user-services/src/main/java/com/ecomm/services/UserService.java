@@ -1,5 +1,7 @@
 package com.ecomm.services;
 
+import com.ecomm.exception.EmailAlreadyExistsException;
+import com.ecomm.exception.UnAuthorizedException;
 import com.ecomm.exception.UserNotFoundException;
 import com.ecomm.model.LoginRequest;
 import com.ecomm.model.User;
@@ -21,24 +23,24 @@ public class UserService {
     private PasswordEncoder passwordEncoder;
 
 
-    public void registerUser(UserEntity userEntity) throws Exception {
+    public void registerUser(UserEntity userEntity) throws EmailAlreadyExistsException {
         if (emailExists(userEntity.getEmail())) {
-            throw new Exception("Email already exists");
+            throw new EmailAlreadyExistsException("Email "+ userEntity.getEmail() +" already exists");
         }
         userEntity.setPassword(encryptPassword(userEntity.getPassword()));
         userDetailsRepository.save(userEntity);
     }
 
-    public void authenticate(LoginRequest loginRequest)  throws Exception{
+    public void authenticate(LoginRequest loginRequest) throws UnAuthorizedException {
         //whether email/username exists, if it's not throw exception
         UserEntity user = userDetailsRepository.findByEmail(loginRequest.getUsername());
-        if(user!=null){
+        if (user != null) {
             String hashedPassword = user.getPassword();
-            if(!passwordEncoder.matches(loginRequest.getPassword(), hashedPassword)){
-                throw new Exception("Invalid credentials");
+            if (!passwordEncoder.matches(loginRequest.getPassword(), hashedPassword)) {
+                throw new UnAuthorizedException("Invalid credentials");
             }
-        }else{
-            throw new Exception("Email doesn't exists");
+        } else {
+            throw new UnAuthorizedException("Email doesn't exists");
         }
     }
 

@@ -1,8 +1,8 @@
 package com.ecomm.entityBuilders;
 
+import com.ecomm.model.UserRequestDTO;
 import com.ecomm.model.Roles;
 import com.ecomm.model.UserEntity;
-import com.ecomm.model.UserRequestDTO;
 import org.springframework.stereotype.Component;
 
 @Component
