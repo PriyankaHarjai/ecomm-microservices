@@ -32,7 +32,7 @@ public class ProductService {
         if (productRepository.existsById(productId)) {
             productRepository.deleteById(productId);
         } else {
-            productRepository.deleteById(productId);
+           throw new ProductNotFoundException("Product doesn't exist with id: "+productId);
         }
     }
 
