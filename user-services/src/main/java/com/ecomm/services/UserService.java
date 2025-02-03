@@ -25,7 +25,7 @@ public class UserService {
 
     public void registerUser(UserEntity userEntity) throws EmailAlreadyExistsException {
         if (emailExists(userEntity.getEmail())) {
-            throw new EmailAlreadyExistsException("Email "+ userEntity.getEmail() +" already exists");
+            throw new EmailAlreadyExistsException("Email " + userEntity.getEmail() + " already exists");
         }
         userEntity.setPassword(encryptPassword(userEntity.getPassword()));
         userDetailsRepository.save(userEntity);

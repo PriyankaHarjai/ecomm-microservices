@@ -1,14 +1,14 @@
 package com.ecomm.controllers;
 
-import com.ecomm.exception.UnAuthorizedException;
-import com.ecomm.model.LoginRequest;
-import com.ecomm.model.User;
-import com.ecomm.model.UserRequestDTO;
-import com.ecomm.services.UserService;
 import com.ecomm.entityBuilders.UserDetailsBuilder;
 import com.ecomm.exception.EmailAlreadyExistsException;
+import com.ecomm.exception.UnAuthorizedException;
 import com.ecomm.exception.UserNotFoundException;
+import com.ecomm.model.LoginRequest;
+import com.ecomm.model.User;
 import com.ecomm.model.UserEntity;
+import com.ecomm.model.UserRequestDTO;
+import com.ecomm.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

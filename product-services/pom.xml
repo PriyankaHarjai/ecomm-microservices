@@ -39,13 +39,6 @@
         </dependency>
 
         <dependency>
-            <groupId>jakarta.servlet</groupId>
-            <artifactId>jakarta.servlet-api</artifactId>
-            <version>5.0.0</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.33</version>
@@ -56,11 +49,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
-       <!-- <dependency>
-            <groupId>io.springfox</groupId>
-            <version>3.0.0</version>
-            <artifactId>springfox-boot-starter</artifactId>
-        </dependency>-->
     </dependencies>
 
 </project>

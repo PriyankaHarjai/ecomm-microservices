@@ -1,5 +1,6 @@
 C:\Users\priya\IdeaProjects\ecomm-microservices\product-services\src\main\java\com\ecomm\controllers\CsrProductServiceController.java
 C:\Users\priya\IdeaProjects\ecomm-microservices\product-services\src\main\java\com\ecomm\controllers\ProductServiceController.java
+C:\Users\priya\IdeaProjects\ecomm-microservices\product-services\src\main\java\com\ecomm\exception\BadRequestException.java
 C:\Users\priya\IdeaProjects\ecomm-microservices\product-services\src\main\java\com\ecomm\exception\InvalidProductException.java
 C:\Users\priya\IdeaProjects\ecomm-microservices\product-services\src\main\java\com\ecomm\exception\ProductNotFoundException.java
 C:\Users\priya\IdeaProjects\ecomm-microservices\product-services\src\main\java\com\ecomm\model\ErrorResponse.java

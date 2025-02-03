@@ -5,10 +5,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 @AllArgsConstructor
-@Setter
 @Getter
-public class ErrorResponse {
-
-    private int status;
+@Setter
+public class CartResponse {
+    private Long cartId;
     private String message;
 }
