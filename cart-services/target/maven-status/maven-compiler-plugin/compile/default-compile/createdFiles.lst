@@ -1,0 +1,15 @@
+com\ecomm\services\CartService.class
+com\ecomm\client\ProductClient.class
+com\ecomm\model\CartItem.class
+com\ecomm\exception\BadRequestException.class
+com\ecomm\exception\OutOfStockException.class
+com\ecomm\repositories\CartRepository.class
+com\ecomm\client\UserClient.class
+com\ecomm\exception\ProductNotFoundException.class
+com\ecomm\model\ErrorResponse.class
+com\ecomm\services\ServiceControllerAdvice.class
+com\ecomm\CartServiceApplication.class
+com\ecomm\model\CartResponse.class
+com\ecomm\model\Product.class
+com\ecomm\controllers\CartServiceController.class
+com\ecomm\model\Cart.class

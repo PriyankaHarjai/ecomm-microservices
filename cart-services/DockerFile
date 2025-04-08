@@ -1,0 +1,14 @@
+# Use OpenJDK 17
+FROM openjdk:17-jdk-slim
+
+# Set working directory inside container
+WORKDIR /app
+
+# Copy built jar into container
+COPY target/cart-services-1.0-SNAPSHOT.jar cart-services-1.0-SNAPSHOT.jar
+
+# Expose port for container
+EXPOSE 8083
+
+# Run the jar file
+ENTRYPOINT ["java", "-jar", "cart-services-1.0-SNAPSHOT.jar"]

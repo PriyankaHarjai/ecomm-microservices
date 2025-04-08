@@ -1,9 +1,9 @@
 package com.ecomm.services;
 
-import com.ecomm.exception.UnAuthorizedException;
-import com.ecomm.model.ErrorResponse;
 import com.ecomm.exception.EmailAlreadyExistsException;
+import com.ecomm.exception.UnAuthorizedException;
 import com.ecomm.exception.UserNotFoundException;
+import com.ecomm.model.ErrorResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

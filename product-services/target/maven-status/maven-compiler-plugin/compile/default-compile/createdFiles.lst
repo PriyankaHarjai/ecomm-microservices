@@ -1,11 +1,12 @@
-com\ecomm\exception\ProductNotFoundException.class
 com\ecomm\services\ProductService.class
+com\ecomm\ProductServiceApplication.class
+com\ecomm\services\SecurityConfig.class
+com\ecomm\exception\BadRequestException.class
+com\ecomm\exception\ProductNotFoundException.class
 com\ecomm\exception\InvalidProductException.class
 com\ecomm\controllers\CsrProductServiceController.class
 com\ecomm\model\ErrorResponse.class
 com\ecomm\services\ServiceControllerAdvice.class
-com\ecomm\ProductServiceApplication.class
 com\ecomm\controllers\ProductServiceController.class
-com\ecomm\services\SecurityConfig.class
 com\ecomm\model\Product.class
 com\ecomm\repository\ProductRepository.class

@@ -13,19 +13,19 @@ public class CsrProductServiceController {
     //Constructor injection
     private final ProductService productService;
 
-    private CsrProductServiceController(ProductService productService){
-        this.productService=productService;
+    private CsrProductServiceController(ProductService productService) {
+        this.productService = productService;
     }
 
     @PostMapping
-    public ResponseEntity<Product> addProduct(@RequestBody Product product){
-        Product response =  productService.addProduct(product);
+    public ResponseEntity<Product> addProduct(@RequestBody Product product) {
+        Product response = productService.addProduct(product);
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
     @DeleteMapping("/{productId}")
-    public ResponseEntity<String> deleteProduct(@PathVariable Long productId){
+    public ResponseEntity<String> deleteProduct(@PathVariable Long productId) {
         productService.deleteProductById(productId);
-        return ResponseEntity.status(HttpStatus.CREATED).body("Product with id "+ productId+" has been deleted successfully.");
+        return ResponseEntity.status(HttpStatus.CREATED).body("Product with id " + productId + " has been deleted successfully.");
     }
 }

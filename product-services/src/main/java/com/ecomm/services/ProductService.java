@@ -4,7 +4,6 @@ import com.ecomm.exception.InvalidProductException;
 import com.ecomm.exception.ProductNotFoundException;
 import com.ecomm.model.Product;
 import com.ecomm.repository.ProductRepository;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,16 +13,17 @@ import java.util.Optional;
 public class ProductService {
     private final ProductRepository productRepository;
 
-    private ProductService(ProductRepository productRepository){
-        this.productRepository=productRepository;
+    private ProductService(ProductRepository productRepository) {
+        this.productRepository = productRepository;
     }
+
     public Product addProduct(Product product) {
-        if(product!=null){
+        if (product != null) {
             if (product.getName() == null || product.getAmount() == null || product.getCategory() == null) {
                 throw new InvalidProductException("Missing required fields: name, price, category.");
             }
             return productRepository.save(product);
-        }else{
+        } else {
             throw new NullPointerException("Product not found.");
         }
     }
@@ -32,7 +32,7 @@ public class ProductService {
         if (productRepository.existsById(productId)) {
             productRepository.deleteById(productId);
         } else {
-           throw new ProductNotFoundException("Product doesn't exist with id: "+productId);
+            throw new ProductNotFoundException("Product doesn't exist with id: " + productId);
         }
     }
 
@@ -50,9 +50,9 @@ public class ProductService {
     }
 
     public List<Product> getProductByCategory(String category) {
-        if(category!=null){
+        if (category != null) {
             return productRepository.findByCategory(category);
-        }else{
+        } else {
             throw new NullPointerException("Category is null");
         }
     }
