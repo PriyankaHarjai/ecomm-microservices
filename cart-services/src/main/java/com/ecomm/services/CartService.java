@@ -42,6 +42,7 @@ public class CartService {
         Cart cart = getOrCreateCart(userId);
         CartItem cartItem = new CartItem(null, productId, product.getAmount(), quantity);
         cart.getItemList().add(cartItem);
+        cart.setTotalAmount(quantity*product.getAmount());
 
         cartRepository.save(cart);
         return "Item has been added successfully.";
@@ -50,7 +51,7 @@ public class CartService {
 
     private Cart getOrCreateCart(Long userId) {
         return cartRepository.findById(userId)
-                .orElseGet(() -> new Cart(userId, new ArrayList<>()));
+                .orElseGet(() -> new Cart(userId, new ArrayList<>(), 0d));
     }
 
     public Cart findByUserId(Long userId) {

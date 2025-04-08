@@ -21,4 +21,6 @@ public class Cart {
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<CartItem> itemList;
+
+    private Double totalAmount;
 }

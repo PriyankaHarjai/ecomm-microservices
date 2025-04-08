@@ -1,0 +1,11 @@
+com\ecomm\OrderServiceApplication.class
+com\ecomm\model\Order.class
+com\ecomm\exception\NoRecordsException.class
+com\ecomm\client\CartServiceClient.class
+com\ecomm\exception\InvalidOrderException.class
+com\ecomm\model\CartItem.class
+com\ecomm\exception\BadRequestException.class
+com\ecomm\services\OrderService.class
+com\ecomm\repository\OrderRepositoty.class
+com\ecomm\controllers\OrderServiceController.class
+com\ecomm\model\Cart.class
